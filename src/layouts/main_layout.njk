@@ -10,7 +10,7 @@
             href="$assetsDir/images/favicon.png"
         />
         <link rel="stylesheet" href="$assetsDir/styles/salesforce-lightning-design-system.css" />
-        <!-- <link rel="stylesheet" href="$assetsDir/css/main.css" /> -->
+        <link rel="stylesheet" href="$assetsDir/css/main.css" />
 	</head>
 
 	<body>
@@ -19,7 +19,7 @@
                 <img style="width: inherit;" src="$assetsDir/images/me_main.png" alt="Image of Jesper" />
             </header>
             <nav>
-                <div class="slds-tabs_default">
+                <div class="slds-tabs_default slds-tabs_large">
                     <ul class="slds-tabs_default__nav" role="tablist">
                         <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation">
                             <a class="slds-tabs_default__link" href="/" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Home</a>
@@ -31,9 +31,6 @@
                             <a class="slds-tabs_default__link" href="/about" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">About</a>
                         </li>
                     </ul>
-                    <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">Item One Content</div>
-                    <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">Item Two Content</div>
-                    <div id="tab-default-3" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item">Item Three Content</div>
                 </div>
 
             </nav>
@@ -41,7 +38,7 @@
                 {{ body | safe }}
             </main>
             <footer>
-                <div style="text-align: center;">
+                <div class="slds-m-top_x-large" style="text-align: center;">
                     <a target="_blank" href="https://www.linkedin.com/in/jesperklang/"><img style="height: 50px;" src="$assetsDir/images/linkedin.svg" alt="LinkedIn" /></a>
                     <a target="_blank" href="https://github.com/jesperklang"><img style="height: 50px;" src="$assetsDir/images/github.svg" alt="GitHub" /></a>
                     <a target="_blank" href="https://www.youtube.com/@JesperKlang"><img style="height: 50px;" src="$assetsDir/images/youtube.svg" alt="YouTube" /></a>

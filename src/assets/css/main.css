@@ -37,7 +37,7 @@ body {
     width: 900px;
     display: grid;
     grid-template-columns: 100%;
-    gap: 3em;
+    gap: 2em;
 }
 
 header {
@@ -54,15 +54,6 @@ nav ul {
     gap: 2em;
 }
 
-nav ul li a {
-    padding: 12px 20px;
-    font-size: 1.5em;
-    background-color: var(--primary-color-blue-highlight);
-    border-radius: 7px;
-    color: var(--primary-color-blue);
-    text-decoration: none;
-}
-
 html {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
         'Lucida Grande', sans-serif;
@@ -70,12 +61,6 @@ html {
     font-size: 16px;
     line-height: 1.6;
     box-sizing: border-box;
-}
-
-nav ul li a:hover {
-    background-color: var(--primary-color-darkblue);
-    color: white;
-    transition: background-color .25s;
 }
 
 main {
