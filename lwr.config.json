@@ -12,6 +12,12 @@
             "path": "/about",
             "contentTemplate": "$contentDir/about.md",
             "layoutTemplate": "$layoutsDir/main_layout.njk"
+        },
+        {
+            "id": "Fun stuff",
+            "path": "/fun",
+            "contentTemplate": "$contentDir/fun.md",
+            "layoutTemplate": "$layoutsDir/main_layout.njk"
         }
     ]
 }
