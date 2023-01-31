@@ -1,3 +1,6 @@
+# Stores VSCode versions used for testing VSCode extensions
+.vscode
+
 # LWR Cache
 __lwr_cache__/
 
