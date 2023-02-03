@@ -15,9 +15,7 @@
   "dependencies": {
     "cpx": "^1.5.0",
     "lwc": "2.17.0",
-    "lwr": "0.8.12"
-  },
-  "devDependencies": {
+    "lwr": "0.8.12",
     "@salesforce-ux/design-system": "^2.17.5",
     "lightning-base-components": "^1.14.6-alpha"
   },
