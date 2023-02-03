@@ -1,14 +1,12 @@
 <template>
   <lightning-layout class="slds-m-bottom_xx-small" vertical-align="top" horizontal-align="center">
     <lightning-layout-item size="5">
-      <div >
-        <lightning-tabset class="slds-tabs_large" active-tab-value={activeTab}>
-          <lightning-tab label="Home" value="Home" data-url="/" onactive={handleActive}></lightning-tab>
-          <lightning-tab label="Fun stuff" value="Fun stuff" data-url="/fun" onactive={handleActive}>
-          </lightning-tab>
-          <lightning-tab label="About" value="About" data-url="/about" onactive={handleActive}></lightning-tab>
-        </lightning-tabset>
-      </div>
+      <lightning-tabset class="slds-tabs_large" active-tab-value={activeTab}>
+        <lightning-tab label="Home" value="Home" data-url="/" onactive={handleActive}></lightning-tab>
+        <lightning-tab label="Fun stuff" value="Fun" data-url="/fun" onactive={handleActive}>
+        </lightning-tab>
+        <lightning-tab label="About" value="About" data-url="/about" onactive={handleActive}></lightning-tab>
+      </lightning-tabset>
     </lightning-layout-item>
     <lightning-layout-item class="slds-m-top_small" size="1">
       <lightning-icon size="small" icon-name="utility:setup_assistant_guide"></lightning-icon>
