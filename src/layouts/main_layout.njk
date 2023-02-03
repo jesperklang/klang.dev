@@ -18,10 +18,11 @@
             <header>
                 <img style="width: inherit;" src="$assetsDir/images/me_main.png" alt="Image of Jesper" />
             </header>
+            <c-navigation></c-navigation>
             <nav>
                 <div class="slds-tabs_default slds-tabs_large">
                     <ul class="slds-tabs_default__nav" role="tablist">
-                        <li class="slds-tabs_default__item slds-is-active" title="Home" role="presentation">
+                        <li class="slds-tabs_default__item" title="Home" role="presentation">
                             <a class="slds-tabs_default__link" href="/" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Home</a>
                         </li>
                         <li class="slds-tabs_default__item" title="Fun stuff" role="presentation">
@@ -32,10 +33,9 @@
                         </li>
                     </ul>
                 </div>
-
             </nav>
             <main>
-                {{ body | safe }}
+                {{ body | safe }} {{ lwr_resources | safe }}
             </main>
             <footer>
                 <div class="slds-m-top_x-large" style="text-align: center;">
