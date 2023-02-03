@@ -12,4 +12,4 @@ export default class Navigation extends LightningElement {
     if (this.activeTab === event.target.value) return;
     window.location.href = event.target.dataset.url;
   }
-} 
+}
