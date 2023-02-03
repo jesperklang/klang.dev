@@ -42,6 +42,12 @@
             "bootstrap": {
                 "syntheticShadow": true
             }
+        },
+        {
+            "id": "Back",
+            "path": "/back",
+            "contentTemplate": "$contentDir/back.html",
+            "layoutTemplate": "$layoutsDir/background_loop.njk"
         }
     ]
 }
