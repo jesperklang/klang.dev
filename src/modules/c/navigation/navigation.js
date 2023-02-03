@@ -1,8 +1,15 @@
-import { LightningElement } from "lwc";
+import { LightningElement, api } from "lwc";
 
 export default class Navigation extends LightningElement {
-  handleClick(event) {
-    console.log(`You clicked the "${event.target.label}" button`);
-    // Perform an action here
+  @api page;
+  activeTab;
+
+  connectedCallback() {
+    this.activeTab = this.page;
   }
-}
+
+  handleActive(event) {
+    if (this.activeTab === event.target.label) return;
+    window.location.href = event.target.dataset.url;
+  }
+} 
