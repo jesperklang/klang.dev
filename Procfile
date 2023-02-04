@@ -1,1 +1,1 @@
-web: npm run start:prod-compat
+web: npm run start

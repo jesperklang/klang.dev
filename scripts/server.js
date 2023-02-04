@@ -1,7 +1,6 @@
 import { createServer } from "lwr";
 
 const PORT = parseInt(process.env.PORT || "3001", 10);
-console.log(process.env.NODE_ENV);
 const SERVER_MODE = process.env.NODE_ENV || "prod";
 
 // Create the LWR App Server
