@@ -15,7 +15,7 @@
   "dependencies": {
     "@salesforce-ux/design-system": "^2.17.5",
     "fs-extra": "^11.1.0",
-    "lightning-base-components": "^1.14.6-alpha",
+    "lightning-base-components": "^1.17.3-alpha",
     "lwc": "2.17.0",
     "lwr": "0.8.12"
   },
