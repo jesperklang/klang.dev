@@ -1,18 +1,28 @@
 import { createServer } from "lwr";
 
-const lwrServer = createServer({ serverType: "express" });
+const PORT = parseInt(process.env.PORT || "3001", 10);
+console.log(process.env.NODE_ENV);
+const SERVER_MODE = process.env.NODE_ENV || "prod";
 
-const app = lwrServer.getInternalServer();
+// Create the LWR App Server
+const lwrServer = createServer({
+    serverMode: SERVER_MODE,
+    port: PORT,
+});
 
-app.get("/api/hello", (req, res) => {
+// Get the internal express app
+const expressApp = lwrServer.getInternalServer("express");
+
+expressApp.get("/api/hello", (req, res) => {
     res.json({ greeting: "Hello!" });
 });
 
 lwrServer
     .listen(({ port, serverMode }) => {
-        console.log(`Server started on port ${port} in ${serverMode} mode`);
+        console.log(`✅ App listening on port ${port} in ${serverMode} mode!`);
+        console.log(`Url http://localhost:${port}`);
     })
-    .catch((error) => {
-        console.error(error);
+    .catch((err) => {
+        console.error(err);
         process.exit(1);
     });

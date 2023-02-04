@@ -37,7 +37,7 @@
         {
             "id": "Fun stuff",
             "path": "/fun",
-            "contentTemplate": "$contentDir/fun.md",
+            "contentTemplate": "$contentDir/fun/fun.html",
             "layoutTemplate": "$layoutsDir/main_layout.njk",
             "bootstrap": {
                 "syntheticShadow": true
