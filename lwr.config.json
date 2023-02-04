@@ -11,7 +11,7 @@
             "urlPath": "/fonts"
         },
         {
-            "file": "$rootDir/src/assets/utilitySprite.svg",
+            "file": "$rootDir/src/assets/images",
             "urlPath": "/lightning.utilitySprite"
         }
     ],
