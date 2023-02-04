@@ -20,7 +20,6 @@ expressApp.get("/api/hello", (req, res) => {
 lwrServer
     .listen(({ port, serverMode }) => {
         console.log(`✅ App listening on port ${port} in ${serverMode} mode!`);
-        console.log(`Url http://localhost:${port}`);
     })
     .catch((err) => {
         console.error(err);
