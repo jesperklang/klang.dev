@@ -63,3 +63,15 @@ h1 {
     font-size: 2rem;
     font-weight: 300;
 }
+
+.imgInherit {
+    width: inherit;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.iconHeight {
+    height: 50px;
+}
