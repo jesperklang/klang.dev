@@ -35,9 +35,9 @@
             }
         },
         {
-            "id": "Fun stuff",
+            "id": "Fun",
             "path": "/fun",
-            "contentTemplate": "$contentDir/fun/fun.html",
+            "contentTemplate": "$contentDir/fun.html",
             "layoutTemplate": "$layoutsDir/main_layout.njk",
             "bootstrap": {
                 "syntheticShadow": true
