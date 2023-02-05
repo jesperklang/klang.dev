@@ -1,18 +1,11 @@
 import { createServer } from "lwr";
 import helmet from "helmet";
 
-const PORT = parseInt(process.env.PORT || "3001", 10);
-const SERVER_MODE = process.env.NODE_ENV || "prod";
-
 // Create the LWR App Server
-const lwrServer = createServer({
-    serverMode: SERVER_MODE,
-    port: PORT,
-});
+const lwrServer = createServer();
 
 // Get the internal express app
 const expressApp = lwrServer.getInternalServer("express");
-
 expressApp.enable("trust proxy");
 expressApp.use(
     helmet({

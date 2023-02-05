@@ -7,10 +7,9 @@
   "scripts": {
     "build": "node ./scripts/copy-slds.mjs",
     "clean": "rm -rf __lwr_cache__",
-    "dev": "NODE_ENV=dev WARMUP=true node ./scripts/server.js",
-    "start": "NODE_ENV=prod WARMUP=true node ./scripts/server.js",
-    "start:compat": "NODE_ENV=compat WARMUP=true node ./scripts/server.js",
-    "start:prod-compat": "NODE_ENV=prod-compat WARMUP=true node ./scripts/server.js"
+    "dev": "WARMUP=true node ./scripts/server.js",
+    "start": "MODE=prod WARMUP=true node ./scripts/server.js",
+    "start:compat": "MODE=compat WARMUP=true node ./scripts/server.js"
   },
   "dependencies": {
     "@salesforce-ux/design-system": "^2.17.5",
