@@ -1,6 +1,10 @@
 {
-    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }, { "npm": "lightning-base-components" }] },
-    "bundleConfig": { "exclude": ["lwc"] },
+    "lwc": {
+        "modules": [
+            { "dir": "$rootDir/src/modules" },
+            { "npm": "lightning-base-components" }
+        ]
+    },
     "assets": [
         {
             "alias": "assetsDir",
@@ -16,6 +20,13 @@
             "urlPath": "/lightning.utilitySprite"
         }
     ],
+    "bundleConfig": {
+        "exclude": [
+            "lwc",
+            "@lwc/synthetic-shadow",
+            "lwr/navigation"
+        ]
+    },
     "routes": [
         {
             "id": "Home",

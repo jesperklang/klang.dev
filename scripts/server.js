@@ -42,8 +42,10 @@ expressApp.use(
     })
 );
 
-expressApp.get("/api/hello", (req, res) => {
-    res.json({ greeting: "Hello!" });
+expressApp.get("/api/v1/getCustomerType", (req, res) => {
+    const resultOptions = ['Paying', 'Free'];
+    const randomResult = resultOptions[Math.floor(Math.random() * resultOptions.length)];
+    res.json({ customerType: randomResult });
 });
 
 lwrServer

@@ -37,17 +37,14 @@ body {
     width: 900px;
     display: grid;
     grid-template-columns: 100%;
-    gap: 1em;
 }
 
-header {
+.headerImage {
     width: 200px;
-    justify-self: center;
 }
 
 html {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-        'Lucida Grande', sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.6;
@@ -64,14 +61,10 @@ h1 {
     font-weight: 300;
 }
 
-.imgInherit {
-    width: inherit;
+.socialIconGroup {
+    gap: 0.5em;
 }
 
-.centerAlign {
-    text-align: center;
-}
-
-.iconHeight {
-    height: 50px;
+.socialIconGroup img {
+    height: 3.5em;
 }
